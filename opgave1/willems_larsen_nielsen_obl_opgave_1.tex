@@ -7,37 +7,50 @@
 \usepackage{ulem}
 \usepackage{url}
 \usepackage{mathpazo}
-\usepackage{fancyhdr}
 \usepackage{graphicx}
-\usepackage{enumerate}
+\usepackage{enumitem}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \setlength{\headheight}{45pt}
 \pagestyle{fancy}
+
+\renewlist{description}{description}{5}
+\setlist[description]{labelindent=3cm,labelwidth=3cm,itemindent=3cm,
+leftmargin=3cm}
 
 \lhead{Københavns Universitet \\ DIKU \\ \today}
 \rhead{Mikkel Oscar Lyderik Larsen \\ Claus Skou Nielsen \\ Nicolai Willems}
 \cfoot{\thepage\ of \pageref{LastPage}}
 
 \begin{document}
+
 \section{Indledning til projektet}
 Projektet omhandler implementeringen af en indlånskontotype, kaldet Aktiekonto.
 
 Det går ud på at kunden indbetaler et minimum på ca. 25000 kr. til en konto, og
-over 3 år får udbyttet af nogle invisteringer som banken står får.
+over tre år får udbyttet af nogle investeringer som banken står får.
 
 Det IT-mæssige ligger i at der er noget teknisk ved at oprette denne type konto,
 både fordi der er en pensionsmæssig del som skal behandles på en bestemt måde, og
 samtidig skal der oplyses nogle information til skat. Dette er alle ting som man
 kan gøre manuelt, men kan effektiviseres meget ved at implementere et system der
-kan gøre det. Både for at spare mandetimer, men også for at eleminerer chancen
+kan gøre det. Både for at spare mandetimer, men også for at eliminere chancen
 for fejlindtastninger.
-  \section{TCO}
-  \input{tco.tex}
 
-  \section{TBO}
-  \input{tbo.tex}
+Vores kontakt var projektlederen for IT-afdelingen, der står for
+implementeringen af projektet. Projektet laves internt ved hjælp af firmaets
+egne ressourcer. Strukturen med hensyn til sådanne projekter, svarer
+ikke direkte til kunde-, leverandør- og systemejermodellen i Nykredet, men de
+har derimod deres egen ordning. Den vil vi ikke komme nærmere ind på i denne
+rapport, da det ikke er en del af opgaveformuleringen.
 
-  \section{MOV}
-  \input{mov.tex}
+\section{TCO}
+\input{tco.tex}
+
+\section{TBO}
+\input{tbo.tex}
+
+\section{MOV}
+\input{mov.tex}
+
 \end{document}
